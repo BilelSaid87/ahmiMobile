@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="tn.ahmi.ui.auth.AuthViewModel"
+            />
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        tools:context=".ui.auth.LoginActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/slider2"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_code"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:gravity="center"
+                android:text="@string/txtcode"
+                android:fontFamily="@font/droidkufi_bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:gravity="center"
+                android:text="@string/txtcodedesc"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/droidkufi_regular"
+                android:textSize="15sp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <com.chaos.view.PinView android:id="@+id/input_code"
+                        style="@style/PinWidget.PinView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberPassword|textVisiblePassword"
+                        android:maxLength="4"
+                        android:padding="5dp"
+                        android:textColor="@color/colorAccent"
+                        app:itemCount="4"
+                        android:text="@={viewmodel.inputcode}"
+                        android:textSize="25sp"
+                        android:digits="1234567890"
+                        app:viewType="line" >
+                        <requestFocus />
+                    </com.chaos.view.PinView>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:layout_weight="0"
+                        android:text="@string/ok"
+                        android:textColor="@color/white"
+                        app:backgroundTint="@color/blue"
+                        app:cornerRadius="10dp"
+                        android:fontFamily="@font/droidkufi_bold"
+                        android:onClick="@{viewmodel::onSignupButtonClick}"
+                        android:layout_marginTop="20dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/btnResend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="@string/txtresend"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/droidkufi_regular"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </LinearLayout>
+        <ProgressBar
+            android:visibility="invisible"
+            android:id="@+id/progress_bar"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>
+

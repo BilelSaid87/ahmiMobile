@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+    <data>
+
+        <variable
+                name="viewmodel"
+                type="tn.ahmi.ui.auth.AuthViewModel"
+        />
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/root_layout"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            tools:context=".ui.auth.SignupActivity">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/slider3"
+                        android:layout_gravity="center"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="خلّي الهيئة الصّحّية تعرفك أكثر"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/droidkufi_bold"
+                        android:textSize="20sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:contentPadding="10dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            >
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="50dp"
+                                android:layout_marginStart="50dp"
+                                android:gravity="center"
+                                android:text="الجنس"
+                                android:textColor="@color/colorPrimary"
+                                android:fontFamily="@font/droidkufi_bold"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="10dp">
+                                <TextView
+                                                                    android:fontFamily="@font/droidkufi_bold"
+                                    android:id="@+id/btnWomen"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="15dp"
+                                    android:gravity="center"
+                                    android:text="@string/women"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:background="@drawable/bg_signup_noselected"
+                                    />
+
+                                <TextView
+                                                                    android:fontFamily="@font/droidkufi_bold"
+                                    android:id="@+id/btnMan"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="15dp"
+                                    android:gravity="center"
+                                    android:text="@string/man"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@drawable/bg_signup_noselected"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:contentPadding="10dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            >
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="50dp"
+                                android:layout_marginStart="50dp"
+                                android:gravity="center"
+                                android:text="@string/txtbirthday"
+                                android:fontFamily="@font/droidkufi_bold"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="10dp">
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spYear"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="15dp"
+                                    android:gravity="center"
+                                    android:textSize="15sp"
+                                    android:background="@drawable/bg_text_noselected"
+                                    android:theme="@style/Theme.AppCompat.NoActionBar"
+                                    android:fontFamily="@font/droidkufi_bold"
+
+                                    />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spMonth"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="15dp"
+                                    android:gravity="center"
+                                    android:textSize="15sp"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@drawable/bg_text_noselected"
+                                    android:entries="@array/month"
+                                    android:theme="@style/Theme.AppCompat.NoActionBar"
+                                    android:fontFamily="@font/droidkufi_bold"
+
+                                    />
+
+                                <androidx.appcompat.widget.AppCompatSpinner
+                                    android:id="@+id/spDay"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:padding="15dp"
+                                    android:gravity="center"
+                                    android:textSize="15sp"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@drawable/bg_text_noselected"
+                                    android:entries="@array/days"
+                                    android:fontFamily="@font/droidkufi_bold"
+                                    android:theme="@style/Theme.AppCompat.NoActionBar"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:contentPadding="10dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            >
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="50dp"
+                                android:layout_marginStart="50dp"
+                                android:gravity="center"
+                                android:text="@string/txtissues"
+                                android:fontFamily="@font/droidkufi_bold"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                                                android:fontFamily="@font/droidkufi_bold"
+                                android:id="@+id/btnHeart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:gravity="center"
+                                android:text="@string/heart"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/bg_signup_noselected"
+                                />
+
+                            <TextView
+                                                                android:fontFamily="@font/droidkufi_bold"
+                                android:id="@+id/btnAsmathic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:gravity="center"
+                                android:text="@string/psy"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/bg_signup_noselected"
+                                />
+
+                            <TextView
+                                                                android:fontFamily="@font/droidkufi_bold"
+                                android:id="@+id/btnOther"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:gravity="center"
+                                android:text="@string/others"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/bg_signup_noselected"
+                                />
+
+                            <TextView
+                                                                android:fontFamily="@font/droidkufi_bold"
+                                android:id="@+id/btnNone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:gravity="center"
+                                android:text="@string/none"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/bg_signup_noselected"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:text="@string/ok"
+                        android:textColor="@color/white"
+                        app:cornerRadius="10dp"
+                        app:backgroundTint="@color/blue"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:onClick="@{viewmodel::onSignupFinsh}"
+                        android:fontFamily="@font/droidkufi_bold"
+
+                        />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+
+        <ProgressBar
+                android:visibility="invisible"
+                android:id="@+id/progress_bar"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
+
+
+
+

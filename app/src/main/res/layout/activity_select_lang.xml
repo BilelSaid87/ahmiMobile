@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_splachv2"
+    tools:context=".ui.splachscrean.SelectLangActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/txtselect"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/droidkufi_bold"
+        />
+
+
+    <TextView
+        android:id="@+id/btnENG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:text="@string/english"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:background="@drawable/bg_text_noselected"
+        android:fontFamily="@font/droidkufi_bold"
+
+        />
+    <TextView
+        android:id="@+id/btnES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:text="@string/arab"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:background="@drawable/bg_text_noselected"
+        android:fontFamily="@font/droidkufi_bold"
+
+        />
+    <TextView
+        android:id="@+id/btnFR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:text="@string/french"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:background="@drawable/bg_text_noselected"
+        android:fontFamily="@font/droidkufi_bold"
+
+        />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/select"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:fontFamily="@font/droidkufi_bold"
+            />
+</LinearLayout>

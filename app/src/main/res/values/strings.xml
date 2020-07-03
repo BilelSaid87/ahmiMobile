@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Ahmi</string>
+    <string name="txtsplash"><font fgcolor='#3ACCE1'>إنت
+</font>   الحلّ \nباش نرجعو كيما قبل</string>
+    <string name="txtselect">"اختر لغتك المفضلة "</string>
+    <string name="english">الإنجليزية</string>
+    <string name="arab">العربية</string>
+    <string name="french">الفرنسية</string>
+    <string name="select">اختار</string>
+    <string name="txtmsg">!أحمي روحك \n!أحمي لعزاز عليك \n!أحمي تونس</string>
+    <string name="txthow">كيفاش أحمي\n
+ تنجم <font fgcolor='#3ACCE1'> تحمينا؟
+</font></string>
+    <string name="register">تسجــــــــــيل</string>
+    <string name="txtlogin">الهاتف الجوّال</string>
+    <string name="txtlogindesc">نومرو التاليفون اللّي تنجّم\n
+وزارة الصّحّة تكلّمك عليه</string>
+
+    <string name="ok">موافق</string>
+    <string name="txtregles">كيف تستعمل "أحمي" باش تسمح ب: -\n إستعمال البلوتوث -\n التّعرّف على العنوان -\n  إمكانية تلقّيك إتّصال من وزارة الصّحّة</string>
+    <string name="txtlogincode">باش يجيك كود  على نومرو التّاليفون</string>
+    <string name="txtnowyou">خلّينا نعرفوك أكثر</string>
+    <string name="man">ذكر</string>
+    <string name="women">أنثى</string>
+    <string name="txtbirthday">"تاريخ الميلاد "</string>
+    <string name="txtissues">عندك أمراض؟</string>
+    <string name="heart">"أمراض قلبيّة : جلطة سابقة مثلا "</string>
+    <string name="psy">"أمراض  تنفّسيّة : ضيق التّنفّس مثلا "</string>
+    <string name="others">"أمراض أخرى مزمنة  : ضغط الدم, السّكري, أخرى "</string>
+    <string name="none">"لا أمراض "</string>
+    <string name="year">السّنة</string>
+    <string name="month">الشّهر</string>
+    <string name="day">اليوم</string>
+    <string name="activate_p">قبول الإذن وتفعيل البلوتوث</string>
+    <string name="txtcode">رمز التّحقّق</string>
+    <string name="txtcodedesc">باش يجيك كود \n على نومرو التّاليفون</string>
+    <string name="txtresend">"عاود أبعثلي الكود "</string>
+    <string-array name="days">
+        <item>@string/day</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="month">
+        <item>@string/month</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+</resources>

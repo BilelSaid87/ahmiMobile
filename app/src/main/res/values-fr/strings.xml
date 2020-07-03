@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Ahmi</string>
+    <string name="txtselect">Choisissez votre langue préférée</string>
+    <string name="english">Anglais</string>
+    <string name="arab">Arab</string>
+    <string name="french">Francais</string>
+    <string name="select">Sélectionnez</string>
+    <string name="txtmsg">Je protège ton âme! \n! Je te protège tellement. \n! Je protège la Tunisie</string>
+    <string name="txthow">Comment?</string>
+    <string name="register">Register</string>
+    <string name="txtlogin">Votre Numero du telephone</string>
+    <string name="ok">Valider</string>
+    <string name="txtregles">كيف تستعمل "أحمي" باش تسمح ب: -\n إستعمال البلوتوث -\n التّعرّف على العنوان -\n  إمكانية تلقّيك إتّصال من وزارة الصّحّة</string>
+    <string name="txtlogincode">vous recevrez un code sur votre téléphone portable</string>
+    <string name="txtnowyou">Plus d\'information</string>
+    <string name="man">Male</string>
+    <string name="women">Female</string>
+    <string name="txtbirthday">Date de naissance</string>
+    <string name="txtissues">Vous avez des maladies?</string>
+    <string name="heart">Maladies cardiaques: un accident vasculaire cérébral antérieur tel que</string>
+    <string name="psy">Maladies respiratoires: par exemple, essoufflement</string>
+    <string name="others">Autres maladies chroniques: tension artérielle, diabète, autres</string>
+    <string name="none">Pas de maladies</string>
+    <string name="year">Année</string>
+    <string name="month">Mois</string>
+    <string name="day">Jour</string>
+    <string name="activate_p">accepte les permission et activer le bluetooth</string>
+
+</resources>

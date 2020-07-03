@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><layer-list>
+        <item><shape>
+            <corners android:radius="5dp"/>
+            <solid android:color="@color/colorAccent"/>
+            <stroke android:color="@color/white" android:width="1dp"/>
+            <padding android:bottom="15dp" android:left="15dp" android:right="15dp" android:top="15dp" />
+        </shape></item>
+        <item ><bitmap android:gravity="end|center" android:src="@drawable/ic_done" />
+        </item>
+    </layer-list></item>
+
+</selector>
